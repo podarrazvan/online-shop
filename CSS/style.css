@@ -1,0 +1,434 @@
+*{
+    margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.text{
+    /* 
+    NU MERGE!
+    
+    font-family: 'Pacifico', cursive;
+    
+     */
+     color: darkgrey;
+     font-family: sans-serif;
+}
+a{
+    color: inherit; 
+    text-decoration: inherit;
+  }
+  ul{
+      
+      list-style-type: none;
+  }
+/* header{
+      position: fixed;
+} */
+nav{
+  
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+    background-color:white;
+}
+.center{
+
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-color: #e9ebee;
+
+}
+.logo,
+.search,
+.cart{
+margin-right: 100px;
+}
+.search-bar,
+.search-button{
+    border: 1px solid #0082e6;
+}
+.search-bar{
+ 
+    height: 25px;
+    width: 500px;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-right:0px ;
+
+  
+}
+.search-button{
+    
+    position: absolute;
+    height: 29px;
+    width: 50px;
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border-left:0px ;
+    background-color: white;
+    background-image: url('/Images/search.png');
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 100px;
+}
+
+.profile-pic{
+    width: 25px;
+}
+.account{
+    display: flex;
+    align-items: center;
+}
+.second-bar{
+    height: 50px; 
+    border-bottom: 1px solid rgba(0, 50, 250,0.3);
+    color: white;
+    background-image: linear-gradient(to bottom,white,whitesmoke);
+}
+.bar2-left{
+    display: flex;
+}
+.content{
+    width: 54vw;
+    display: flex;
+    place-content: center space-between;
+    
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    padding: 20px 30px 20px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+      background-color: rgb(50, 50, 50);
+    }
+
+.products-dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-products,
+.cat1,
+.cat2
+{
+    margin-right: 50px;
+}
+/* .promotions-banner{
+  width: 100px;
+  height: 100px;
+    
+} */
+.img-promotions{
+    width: 54vw;
+   
+}
+.promotions-banner{
+   padding-bottom: 10px;
+
+}
+.carousel{
+    padding-bottom:50px ;
+    background-color: rgb(241, 142, 1);
+}
+.promotions-carousel{
+    width: 60vh;
+    
+    padding-top: 30px;
+}
+/* 
+    Aici am incercat sa mut imaginea cand pun mouse-ul peste
+    Products
+    .products-dropdown:hover ~ .products-dropdown{
+    width: 50px;
+    
+} */
+.carousel-top{
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+}
+.offers-btn{
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 10px;
+    background-color: white;
+
+}
+.offers-btn:hover{
+    color: blue;
+}
+.carousel-cards,
+.carousel-cards-2,
+.carousel-cards-3,
+.carousel-cards-4 {
+    display: flex;
+    margin-top: 30px;
+}
+.card1,
+.card2,
+.card3,
+.card4{
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 25px;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+}
+.card1:hover{
+    background-color: rgb(235, 235, 235);
+}
+.top-card{
+    display: flex;
+    flex-direction: row;
+    place-content: center space-between;
+}
+.no-percent,
+.percent{
+    position: relative;
+    left: -100px;
+
+}
+.no-percent{
+    width: 60px;
+    height: 50px;
+}
+.percent{
+    padding: 10px;
+    color: white;
+    background-color:rgb(255, 80, 0) ;
+}
+.favorite{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 80px;
+}
+.product-img{
+    width: 200px;
+    height: 150px;
+}
+.product-name,
+.rating,
+.old-price,
+.price,
+.buy-btn{
+    margin-top: 10px;
+}
+.product-name,
+.old-price,
+.price{
+    background-color:transparent ;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+.rating-star{
+    margin-right:5px ;
+    width: 15px;
+}
+.rating-text{
+    margin-left: 25px;
+    font-size: medium;
+}
+.old-price{
+    display: flex;
+    flex-direction: row;
+}
+.old-price-text{
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+.old-price-percent{
+    color: rgb(77, 77, 77);
+}
+.price{
+    font-size: large;
+    color: red;
+    
+}
+.buy-btn{
+    padding: 10px 50px;
+    color: #005eb8;
+    border-radius: 5px;
+    border: 2px solid #005eb8;
+}
+
+/* sterge de pe site-ul final */
+.benefits{
+    display: flex;
+    flex-direction: row;
+    
+}
+.benefits-card{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 180px;
+    background-color: white;
+}
+.benefits-img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+/* ================== */
+
+.recently-text,
+.alternative-text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 75vw;
+}
+.card2:hover,
+.card3:hover,
+.card4:hover{
+    background-color: #90b3d413;
+}
+.buy-btn-2{
+   display: flex;
+   margin-top: 10px;
+   border-radius: 5px;
+   background: linear-gradient(to right,#4a60c1 10%,#3985e0);
+}
+.red-left,
+.blue-right{
+    padding: 10px 20px;
+}
+.red-left{
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    color: white;
+    background-color: red;
+}
+.banner2-top,
+.banner2-bottom{
+    display: flex;
+    place-content: center space-between;
+    width: 54vw;
+}
+.banner2-top{
+    align-items: center;
+}
+.banner2-top-right{
+    display: flex;
+    color: #005eb8;
+}
+.text-banner2-top-right{
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #1969b4d0;
+}
+.banner2-bottom{
+    
+     background-color: white;
+}
+.right,
+.middle,
+.left{
+    padding: 20px 30px;
+}
+
+.left{
+    background-color: #f4f8fb;
+
+    width: inherit;
+}
+.text-banner2-left{
+    margin: 10px 20px;
+}
+.text1-banner2-middle,
+.text-banner2-middle{
+    padding: 17px 150px 17px  5px;
+}
+.middle,
+.right{
+    flex-direction: column;
+    display: flex;
+    place-content: center;
+}
+.text-banner2-middle{
+   
+    border-top: 1px solid #5387b849;
+}
+.right{
+    border-left: 1px solid #5387b849;
+}
+.img-banner2{
+    width: 400px;
+}
+.download-app{
+    flex-direction: row;
+    margin-top: 20px;
+    width: 54vw;
+    color: white;
+    background-image: linear-gradient(to right, gray, #e3e5e6);
+}
+.google-app-btn{
+    margin-left: 50px;
+    width: 300px;
+}
+
+
+.newsletter{
+    margin-top: 20px;
+    padding: 20px;
+    width:54vw;
+    color: white;
+    background-image: linear-gradient(to right, gray, #e2aaaa)
+    
+}
+.input-newsletter,
+.submit{
+    margin:5px;
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+}
+.submit{
+    color: white;
+    background-color: red;
+}
+.footer-social-media,
+.footer-top{
+    padding: 50px;
+    flex-direction: row;
+    background-color: #3984e01e;
+}
+.col1,
+.col2,
+.col3{
+    margin-right: 100px;
+}
+
+.facebook,
+.instagram{
+    width: 40px;
+    margin: 20px;
+}
+.facebook:hover,.instagram:hover{
+    background-color: grey;
+}
+h1{
+    margin-bottom: 10px;
+}
+
