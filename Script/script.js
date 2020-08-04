@@ -67,6 +67,10 @@ for(i=0; i<3;i++){
 
 }
 
+function buildProductCarousel() {
+    
+}
+
 
 let secondProductCarousel="";
 // daca pun i < 6 (cum e normal) imi va pune mai mult de 6 carduri!
@@ -94,7 +98,7 @@ for(i=0; i<3;i++){
 }
 
 function carouselConstruct(source, construct,x){
-    construct +=`<div class=\"card${x}\">`;//!
+    construct +=`<div class=\"card${x}\">`;//
     construct +="<div class=\"top-card\">";
     if(source.percent>0){
         construct +="<div class=\"percent\">";
