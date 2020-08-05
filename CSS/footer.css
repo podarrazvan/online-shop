@@ -1,0 +1,20 @@
+.footer-social-media,
+.footer-top{
+    padding: 50px;
+    flex-direction: row;
+    background-color: #3984e01e;
+}
+.col1,
+.col2,
+.col3{
+    margin-right: 100px;
+}
+
+.facebook,
+.instagram{
+    width: 40px;
+    margin: 20px;
+}
+.facebook:hover,.instagram:hover{
+    background-color: grey;
+}
