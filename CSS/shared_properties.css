@@ -1,0 +1,115 @@
+.text,
+.white-text,
+.blue-text,
+.dark-text {
+    font-family: sans-serif;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.middle,
+.right {
+    flex-direction: column;
+}
+
+.carousel-top,
+.top-card,
+.rating,
+.old-price,            
+.benefits,
+.download-app {
+    flex-direction: row;
+}
+
+.center,
+.carousel-top,
+.carousel-cards,
+.carousel-cards-2,
+.carousel-cards-3,
+.carousel-cards-4,
+.card1,
+.card2,
+.card3,
+.card4,
+.top-card,
+.rating,
+.old-price,
+.benefits, /*de sters */
+.benefits-card, /*de sters */
+.buy-btn-2,
+.banner2-top,
+.banner2-bottom,
+.banner2-top-right,
+.middle,
+.right {
+    display: flex;
+}
+
+.carousel-cards,
+.carousel-cards-2,
+.carousel-cards-3,
+.carousel-cards-4 {
+    margin-top: 30px;
+}
+
+.product-name,
+.old-price,
+.price,
+.rating {
+    background-color:transparent ;
+}
+
+.center,
+.card1,
+.card2,
+.card3,
+.card4,
+.middle,
+.right {
+    place-content: center;
+}
+
+.center,
+.benefits-card,
+.banner2-top,
+.card1,
+.card2,
+.card3,
+.card4 {
+    align-items: center;
+}
+
+.offers-btn,
+.card1,
+.card2,
+.card3,
+.card4,
+.benefits-card,
+.banner2-bottom { 
+    background-color: white;
+}
+
+.banner2-top,
+.banner2-bottom,
+.top-card {
+    place-content: center space-between;
+}
+
+.img-promotions,
+.banner2-top,
+.banner2-bottom,
+.download-app,
+.newsletter{
+    width: 54vw; 
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.buy-btn,
+.buy-btn-2 {
+    border-radius: 5px;
+}
