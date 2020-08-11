@@ -113,3 +113,12 @@
 .buy-btn-2 {
     border-radius: 5px;
 }
+
+.cat1:hover ,
+.cat2:hover ,
+.cat3:hover,
+.help:hover {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+}

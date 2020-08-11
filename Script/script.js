@@ -60,12 +60,22 @@ const DATA_PRODUCT_LIST = [
   let recentlyAddedToFavoritesList = '';
   let recommendedForYouList = '';
   let newPrice = 0;
-  
+
+  let colNr = 4;
   // CATE ITEME VREI PE FIECARE CAROUSEL, asta daca vrei poti sa o stergi
-  let numberOfProducts = 4;
-  let numberOfRecently = 4;
-  let numberOfFavorites = 4;
-  let numberOfRecommended = 4;
+  if(screen.width < 1080 && screen.width > 830){
+   colNr = 3;
+  }
+  else if (screen.width < 830 && screen.width > 540){
+    colNr = 2;
+  } else if (screen.width < 540){
+    colNr = 1;
+  }
+
+  let numberOfProducts = colNr;
+  let numberOfRecently = colNr;
+  let numberOfFavorites = colNr;
+  let numberOfRecommended = colNr;
   
   buildAllCarousels();
   

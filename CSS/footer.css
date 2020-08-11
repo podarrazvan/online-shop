@@ -1,20 +1,21 @@
 .footer-social-media,
-.footer-top{
-    padding: 50px;
+.footer-top {
+    padding: 30px;
     flex-direction: row;
+    border-top: 1px solid #5387b849;
     background-color: #3984e01e;
 }
 .col1,
 .col2,
-.col3{
+.col3 {
     margin-right: 100px;
 }
 
 .facebook,
-.instagram{
+.instagram {
     width: 40px;
     margin: 20px;
 }
-.facebook:hover,.instagram:hover{
+.facebook:hover,.instagram:hover {
     background-color: grey;
 }

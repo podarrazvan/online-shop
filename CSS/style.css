@@ -47,9 +47,8 @@ ul {
     background-color: rgb(241, 142, 1);
 }
 
-.promotions-carousel {
-    width: 54vh;
-    padding-top: 30px;
+.promotions-carousel-img {
+  width: 35vw;
 }
 /* 
     Aici am incercat sa mut imaginea cand pun mouse-ul peste
@@ -60,12 +59,15 @@ ul {
 } */
 
 .carousel-top {
+      width: 54vh;
+    padding-top: 30px;
     align-items: flex-start;
 }
 
 .offers-btn {
     margin-top: 50px;
-    margin-left: 18vw;
+    margin-left: 5vw;
+    width: 75px;
     padding: 10px;
     background-color: white;
 
@@ -216,7 +218,6 @@ ul {
 }
 
 .banner2-bottom {
-    
      background-color: white;
 }
 
@@ -244,7 +245,6 @@ ul {
 }
 
 .text-banner2-middle {
-   
     border-top: 1px solid #5387b849;
 }
 
@@ -253,7 +253,7 @@ ul {
 }
 
 .img-banner2 {
-    width: 400px;
+    width: 20vw;
 
 }
 
@@ -271,6 +271,7 @@ ul {
 .newsletter {
     margin: 20px 0px;
     padding: 20px 0px;
+    text-align: center;
     background-image: linear-gradient(to right, gray, #e2aaaa)
     
 }

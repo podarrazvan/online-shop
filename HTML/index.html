@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/CSS/style.css">
     <link rel="stylesheet" type="text/css" href="/CSS/navbar.css">
     <link rel="stylesheet" type="text/css" href="/CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/responsive.css">
     <link rel="stylesheet" type="text/css" href="/CSS/shared_properties.css">
     <title>Shop</title>
 </head>
@@ -26,7 +27,14 @@
                 </div>   
                 <div class="account">
                     <img class="profile-pic" src="/Images/profile-pic.png">
-                    <p class="text">
+                    <div class="dropdown-account">
+                        <img class="hamburger" src="/Images/hamburger.png">
+                       <div class="dropdown-account-content">
+                            <p class="text">Account</p>
+                            <p class="text">Cart</p>
+                        </div>
+                    </div>
+                    <p class="text text-hide">
                         Account
                     </p>
                 </div>
@@ -42,14 +50,14 @@
                             <a href="#">Link 3</a>
                         </div>
                     </div>
-                    <div class="products">
+                    <div class="products invisible-885px">
                     <a class="cat1 white-text" href="#">
                         category1
                     </a>
-                    <a class="cat2 white-text" href="#">
+                    <a class="cat2 white-text invisible-885px" href="#">
                         category3
                     </a>
-                    <a class="cat3 white-text" href="#">
+                    <a class="cat3 white-text invisible-885px" href="#">
                         category3
                     </a>
                 </div>
@@ -65,7 +73,7 @@
         </div>
     <div class="carousel center">
         <div class="carousel-top">
-            <img class="promotions-carousel" src="/Images/exemple.svg">
+            <img class="promotions-carousel-img" src="/Images/exemple.svg">
             <a href="#"><p class="offers-btn">View offers</p></a>
         </div>
         <div class="carousel-cards">
@@ -76,23 +84,23 @@
     <div class="benefits center">
         <div class="safe-pay benefits-card">
             <img class="benefits-img" src="/Images/card.webp">
-            <p>Safe pay</p>
+            <p class="benefits-text">Safe pay</p>
         </div>
         <div class="products-variety benefits-card">
             <img class="benefits-img" src="/Images/products.png">
-            <p>All you need</p>
+            <p class="benefits-text">All you need</p>
         </div>
         <div class="open-product benefits-card">
             <img class="benefits-img" src="/Images/box.png">
-            <p>Checking the package at delivery</p>
+            <p class="benefits-text">Checking the package at delivery</p>
         </div>
         <div class="retur benefits-card">
             <img class="benefits-img" src="/Images/retur.png">
-            <p>Return in 30 days</p>
+            <p class="benefits-text" >Return in 30 days</p>
         </div>
         <div class="support benefits-card">
             <img class="benefits-img" src="/Images/support.png">
-            <p>Support 24/7</p>
+            <p class="benefits-text">Support 24/7</p>
         </div>
     </div>
       <!-- ================================ -->
@@ -222,9 +230,9 @@
     <div class="center">
         <div class="download-app center">
             <h1 class="white-text">Download the app </h1>
-            <a href="#" target="_blank">
-            <img class="google-app-btn" src="/Images/google-play-badge.png">
-            </a>
+                <a href="#" target="_blank">
+                    <img class="google-app-btn" src="/Images/google-play-badge.png">
+                </a>
         </div>
     </div>
     <div class="center"> 
