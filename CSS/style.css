@@ -46,6 +46,9 @@ ul {
     padding-bottom:50px ;
     background-color: rgb(241, 142, 1);
 }
+.carousel-cards{
+    overflow-x: scroll;
+}
 
 .promotions-carousel-img {
   width: 35vw;
@@ -59,7 +62,7 @@ ul {
 } */
 
 .carousel-top {
-      width: 54vh;
+    width: 54vh;
     padding-top: 30px;
     align-items: flex-start;
 }

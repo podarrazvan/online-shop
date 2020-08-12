@@ -53,6 +53,42 @@ const DATA_PRODUCT_LIST = [
       totalRating: '5M',
       price: 60000,
     },
+    {
+      percent: 50,
+      link: '#',
+      image: 'tesla.webp',
+      title: 'The best car!',
+      rating: 5,
+      totalRating: '5M',
+      price: 60000,
+    },
+    {
+      percent: 50,
+      link: '#',
+      image: 'tesla.webp',
+      title: 'The best car!',
+      rating: 5,
+      totalRating: '5M',
+      price: 60000,
+    },
+    {
+      percent: 50,
+      link: '#',
+      image: 'tesla.webp',
+      title: 'The best car!',
+      rating: 5,
+      totalRating: '5M',
+      price: 60000,
+    },
+    {
+      percent: 50,
+      link: '#',
+      image: 'tesla.webp',
+      title: 'The best car!',
+      rating: 5,
+      totalRating: '5M',
+      price: 60000,
+    }
   ];
   
   let productList = '';
@@ -72,7 +108,7 @@ const DATA_PRODUCT_LIST = [
     colNr = 1;
   }
 
-  let numberOfProducts = colNr;
+  let numberOfProducts = 8;
   let numberOfRecently = colNr;
   let numberOfFavorites = colNr;
   let numberOfRecommended = colNr;
@@ -100,6 +136,7 @@ const DATA_PRODUCT_LIST = [
       productList += `<a href="#"><div class="buy-btn"><p >Buy now</p></div></a>`;
       productList += '</div>';
     }
+    
   }
   
   function buildCommonLineCarousel(rownumber, itemsToDisplay) {

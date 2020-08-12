@@ -52,6 +52,9 @@
 .carousel-cards-3,
 .carousel-cards-4 {
     margin-top: 30px;
+    max-width: 55vw;
+   
+   
 }
 
 .product-name,
