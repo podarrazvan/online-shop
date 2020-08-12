@@ -1,0 +1,56 @@
+.live-chat{
+    position: fixed;
+    margin-left: 85vw;
+    right: 25px;
+    bottom: 100px;
+}
+.live-chat-img {
+    width: 150px;
+    margin-right: 80px;
+}
+.chat-card{
+    display: none;
+    padding: 10px 10px 0px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.dropdown-live-chat:hover .chat-card{
+    display: block;
+}
+.chat-window{
+    padding: 5px;
+    overflow-y: scroll;
+    background-color: aliceblue;
+    height: 82%;
+}
+.message{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+.user-message{
+    margin-top: 5px;
+    margin-left: 50px;
+    background-color: brown;
+}
+.agent-message {
+    margin-top: 5px;
+    margin-right: 50px;
+}
+.chat-bar{
+    margin-top: 10px;
+}
+.chat-input{
+    height: 40px;
+    width: 66%;
+    border: 0px;
+}
+.chat-btn {
+    height: 40px;
+    width: 30%;
+    border: 0px;
+    color: blue;
+    background-color: greenyellow;
+}

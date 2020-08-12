@@ -90,7 +90,23 @@ const DATA_PRODUCT_LIST = [
       price: 60000,
     }
   ];
-  
+  const CHAT_DIALOG = [
+    { from: 'user',
+      message: 'Lorem ipsum dolor sit amet'
+    },
+    {
+      from: 'agent',
+      message: 'Fusce odio orci, placerat vitae mollis id, dapibus vel odio. Donec vitae nisi at nisi ultricies malesuada quis a dolor. Etiam sem lacus, euismod ac pulvinar eu, consequat sit amet libero'
+    },
+    { from: 'user',
+    message: ' Aenean quis odio velit. Vestibulum et quam quis sapien semper congue non sed eros. Morbi id elit a est commodo imperdiet eget ut ex.'
+    },
+    { from: 'user',
+    message: 'Nam risus nibh, rhoncus vitae dapibus non, fermentum at erat. In laoreet dolor congue, molestie tortor id, lacinia nisi. Praesent dignissim diam quis nulla elementum sollicitudin.'
+    },
+  ]
+
+
   let productList = '';
   let recentlyViewList = '';
   let recentlyAddedToFavoritesList = '';
@@ -192,3 +208,22 @@ const DATA_PRODUCT_LIST = [
     }
     return construct;
   }
+ 
+  $('.chat-window').append( chatDialog(CHAT_DIALOG));
+ 
+
+function chatDialog(arr) {
+ 
+  let dialogConstruct = '';
+  for( let i = 0 ; i < arr.length ; i++) {
+    if (arr[i].from === 'user') {
+      dialogConstruct += '<div class="message user-message">';
+    }else{
+      dialogConstruct += '<div class="message agent-message">';
+    }
+    dialogConstruct += `<p class="white-text">${arr[i].message}</p>`;
+      dialogConstruct += `</div>`
+  }
+  return dialogConstruct;
+
+}
