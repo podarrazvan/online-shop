@@ -1,0 +1,37 @@
+.auto-scroll1{
+    z-index: 2;
+    position: absolute;
+    display:flex;
+-webkit-animation-name: auto0;
+-webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: right;
+-webkit-animation-timing-function: linear;
+} 
+@-webkit-keyframes auto0 {
+0% {
+margin-left: 0px;
+}
+
+100% {
+margin-left: 500px;
+}
+}
+/* .auto-scroll1{
+    z-index: 1;
+    position: absolute;
+    -webkit-animation-name: auto1;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: right;
+    -webkit-animation-timing-function: linear;
+    } 
+    @-webkit-keyframes auto1 {
+    0% {
+    margin-left: 0px;
+    }
+    
+    100% {
+    margin-left: 50px;
+    }
+    } */

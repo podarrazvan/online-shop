@@ -130,11 +130,15 @@ const DATA_PRODUCT_LIST = [
   
   function buildProductsCarousel(itemsToDisplay) {
     productList = '';
-  
+    let x = 0;
     for (let i = 0; i < itemsToDisplay; i++) {
+      if(i % 4 === 0){
+        x++;
+      }
+      productList += `<div class="auto-scroll${x}">`;
       productList += courselDOMBuilder(DATA_PRODUCT_LIST[i], 1);
       productList += `<a href="#"><div class="buy-btn"><p >Buy now</p></div></a>`;
-      productList += '</div>';
+      productList += '</div></div>';
     }
     
   }
