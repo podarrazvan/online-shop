@@ -209,6 +209,8 @@ const DATA_PRODUCT_LIST = [
     return construct;
   }
  
+///   LIVE CHAT   \\\
+
   $('.chat-window').append( chatDialog(CHAT_DIALOG));
  
 
@@ -227,3 +229,5 @@ function chatDialog(arr) {
   return dialogConstruct;
 
 }
+
+///   ===============   \\\
